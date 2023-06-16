@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 header {
   width: 100%;
   height: 1085px;
@@ -75,10 +74,71 @@ nav ul > li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* display: none; */
 }
 .options img {
   width: 10%;
 }
+.openCart {
+  position: absolute;
+  top: 80px;
+  left: 64%;
+  width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 12px;
+  display: none;
+}
+.openCart div {
+  width: 90%;
+  height: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+    margin: 0 5px 0 25px;
+  justify-content: space-between;
+}
+.openCart div > p{
+  cursor: pointer;
+}
+.openCart.active {
+  position: absolute;
+  display: flex;
+}
+
+.changeLanguage {
+  position: absolute;
+  top: 80px;
+  left: 64%;
+  width: 150px;
+  height: 100px;
+  background-color: white;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+}
+.changeLanguage div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.changeLanguage > div img {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 15px;
+}
+.changeLanguage div > p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.changeLanguage.active {
+  position: absolute;
+  display: flex;
+}
+
+/* Main */
 .about_content {
   width: 42%;
   height: 389px;
@@ -352,7 +412,7 @@ nav ul > li {
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  border: 0.1px solid ;
+  border: 0.1px solid;
 }
 .ChekDilishes > p {
   width: 43%;
@@ -554,6 +614,6 @@ nav ul > li {
   height: 55px;
   background: #00d664;
   border-radius: 30px;
-  border:none;
-  color:white
+  border: none;
+  color: white;
 }
